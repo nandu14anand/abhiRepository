@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Quiz</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+  }
+  .bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><b>Quiz for Fun</b></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="index.html" ><b>Home</b></a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Services <span class="caret"></span></a>
+			<ul class="dropdown-menu">
+			  <li><a href="aus.html">About us</a></li>
+			  <li><a href="Loginpage.html">Login</a></li>
+			  <li><a href="Registerpage.html">Register</a></li>
+			</ul>
+		</li>
+		
+        <li><a href="aus.html"><b>About Us</b></a></li>
+		<li><a href="Loginpage.html"><b>Login</b></a></li>
+		<li><a href="Registerpage.html"><b>Register</b></a></li>      
+	</ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h1 class="margin" align="left">Lets play Quiz </h1>
+</div>
+
+<!-- Second Container -->
+
+<div class="container-fluid bg-2 text-center">
+  
+
+<div class="container">
+  <h2>General Knowledge Questions</h2>  
+	 <div style="background-color:blue">
+		<br><br>
+		<p>1. Worlds largest desert?</p>
+		 
+			<div style="width:100%"class="abc">
+			<button id="true" style="background-color:purple; width:80%">sahara</button>
+			
+			</div>
+			<div style="width:100%" class="abc">
+			<button id="false" style="background-color:purple ; width:80%">thar</button>
+			
+			</div>
+			<div style="width:100%" class="abc">
+			<button id="false1" style="background-color:purple ; width:80%">kalahari</button>
+			
+			</div>
+			<div style="width:100%" class="abc">
+			<button id="false2" style="background-color:purple ; width:80%">sonoram</button>
+			
+			</div>
+		<br>
+			<div  style="width:100% " class="abc">
+				<button id="d11" style="background-color:purple ; width:20% ; float:left ">DESCRIPTION</button>
+					
+			<button id="a11" style="background-color:purple ; width:20%  ; float:right">ANSWER</button>
+			</div>
+		<br><br>
+		
+		
+			<div id="d1" style="float:left ; width:30% ;height:30%"><p>Sahara is a largest desert in the world.</p></div>
+			<div id="a1" style="float:right ; width:30% ;height:30%"><p> answer is sahara</p></div>
+		<br><br>
+		<p>2. Mount everest is located in ?</p>
+		 
+			<div style="width:100%" class="abcd">
+			<button id="false" style="background-color:purple; width:80%">india</button>
+			
+			</div>
+			<div style="width:100%" class="abcd">
+			<button id="true" style="background-color:purple ; width:80%">nepal</button>
+			
+			</div>
+			<div style="width:100%"class="abcd">
+			<button id="false1" style="background-color:purple ; width:80%">tibet</button>
+			
+			</div>
+			<div style="width:100%" class="abcd">
+			<button id="false2" style="background-color:purple ; width:80%">china</button>
+			
+			</div>
+		<br>
+		
+		<!--  buttons -->
+		
+			<div  style="width:100% " class="abcd">
+				<button id="d12" style="background-color:purple ; width:20% ; float:left ">DESCRIPTION</button>
+					
+			<button id="a12" style="background-color:purple ; width:20%  ; float:right">ANSWER</button>
+			</div>
+		<br><br>
+		
+		
+			<div id="d2" style="float:left ; width:30% ;height:30%"><p> Mount Everest is in Nepal.</p></div>
+			<div id="a2" style="float:right ; width:30% ;height:30%"><p> answer is Nepal</p></div>
+		<br><br>
+			
+			<p>3. which soil is suitable for agriculture?</p>
+		 
+			<div style="width:100%"  class="abce">
+			<button id="false2" style="background-color:purple; width:80%">black soil</button>
+			
+			</div>
+			<div style="width:100%"  class="abce">
+			<button id="false" style="background-color:purple ; width:80%">sand</button>
+			
+			</div>
+			<div style="width:100%"  class="abce">
+			<button id="true" style="background-color:purple ; width:80%">peaty soil</button>
+			
+			</div>
+			<div style="width:100%"  class="abce">
+			<button id="false1" style="background-color:purple ; width:80%">red soil</button>
+			
+			</div>
+	<br>
+			<div  style="width:100% " class="abce">
+				<button id="d13" style="background-color:purple ; width:20% ; float:left ">DESCRIPTION</button>
+					
+			<button id="a13" style="background-color:purple ; width:20%  ; float:right">ANSWER</button>
+			</div>
+		<br><br>
+		
+		
+			<div id="d3" style="float:left ; width:30% ;height:30%"><p> peaty soil is best for agriculture.</p></div>
+			<div id="a3" style="float:right ; width:30% ;height:30%"><p> answer is Peaty soil</p></div>
+		<br><br>	
+			<p>4.National fruit of India?</p>
+		 
+			<div style="width:100%" class="abc1">
+			<button id="false" style="background-color:purple; width:80%">banana</button>
+			
+			</div>
+			<div style="width:100%" class="abc1">
+			<button id="true" style="background-color:purple ; width:80%">mango</button>
+			
+			</div>
+			<div style="width:100%" class="abc1">
+			<button id="false1" style="background-color:purple ; width:80%">orange</button>
+			
+			</div>
+			<div style="width:100%" class="abc1">
+			<button id="false2" style="background-color:purple ; width:80%">none of the above</button>
+			
+			</div>
+	<br>
+			<div  style="width:100% " class="abc1">
+				<button id="d14" style="background-color:purple ; width:20% ; float:left ">DESCRIPTION</button>
+					
+			<button id="a14" style="background-color:purple ; width:20%  ; float:right">ANSWER</button>
+			</div>
+		<br><br>
+		
+		
+			<div id="d4" style="float:left ; width:30% ;height:30%"><p> mango is national fruit.</p></div>
+			<div id="a4" style="float:right ; width:30% ;height:30%"><p> answer is Mango.</p></div>
+		<br><br>
+			<p>5. Gate way of India is ?</p>
+		 
+			<div style="width:100%" class="abc2">
+			<button id="true" style="background-color:purple; width:80%">Mumbai</button>
+			
+			</div>
+			<div style="width:100%" class="abc2">
+			<button id="false" style="background-color:purple ; width:80%">chennai</button>
+			
+			</div>
+			<div style="width:100%" class="abc2">
+			<button id="false1" style="background-color:purple ; width:80%">kolkata</button>
+			
+			</div>
+			<div style="width:100%" class="abc2">
+			<button id="false2" style="background-color:purple ; width:80%">New delhi</button>
+			
+			</div>
+		<br>
+			<div  style="width:100% " class="abc2">
+				<button id="d15" style="background-color:purple ; width:20% ; float:left ">DESCRIPTION</button>
+					
+			<button id="a15" style="background-color:purple ; width:20%  ; float:right">ANSWER</button>
+			</div>
+		<br><br>
+		
+		
+			<div id="d5" style="float:left ; width:30% ;height:30%"><p> Mumbai is Gate of India</p></div>
+			<div id="a5" style="float:right ; width:30% ;height:30%"><p> answer is Mumbai</p></div>
+		<br><br>
+	 </div>
+</div>
+</div>
+
+<script>
+$(document).ready(function(){
+
+$(".abc").find("#true").click(function(){
+$(".abc").find("#true").css("background-color","green");
+});
+});
+$(document).ready(function(){
+$(".abc").find("#false").click(function(){
+$(".abc").find("#false").css("background-color","red");
+});
+});
+$(document).ready(function(){
+$(".abc").find("#false1").click(function(){
+$(".abc").find("#false1").css("background-color","red");
+});
+});
+$(document).ready(function(){
+$(".abc").find("#false2").click(function(){
+$(".abc").find("#false2").css("background-color","red");
+});
+});
+
+$(document).ready(function(){
+$(".abcd").find("#true").click(function(){
+$(".abcd").find("#true").css("background-color","green");
+});
+});
+$(document).ready(function(){
+$(".abcd").find("#false").click(function(){
+$(".abcd").find("#false").css("background-color","red");
+});
+});
+$(document).ready(function(){
+$(".abcd").find("#false1").click(function(){
+$(".abcd").find("#false1").css("background-color","red");
+});
+});
+$(document).ready(function(){
+$(".abcd").find("#false2").click(function(){
+$(".abcd").find("#false2").css("background-color","red");
+});
+});
+
+$(document).ready(function(){
+$(".abce").find("#true").click(function(){
+$(".abce").find("#true").css("background-color","green");
+});
+});
+$(document).ready(function(){
+$(".abce").find("#false").click(function(){
+$(".abce").find("#false").css("background-color","red");
+});
+});
+$(document).ready(function(){
+$(".abce").find("#false1").click(function(){
+$(".abce").find("#false1").css("background-color","red");
+});
+});
+$(document).ready(function(){
+$(".abce").find("#false2").click(function(){
+$(".abce").find("#false2").css("background-color","red");
+});
+});
+
+$(document).ready(function(){
+$(".abc1").find("#true").click(function(){
+$(".abc1").find("#true").css("background-color","green");
+});
+});
+$(document).ready(function(){
+$(".abc1").find("#false").click(function(){
+$(".abc1").find("#false").css("background-color","red");
+});
+});
+$(document).ready(function(){
+$(".abc1").find("#false1").click(function(){
+$(".abc1").find("#false1").css("background-color","red");
+});
+});
+$(document).ready(function(){
+$(".abc1").find("#false2").click(function(){
+$(".abc1").find("#false2").css("background-color","red");
+});
+});
+
+$(document).ready(function(){
+$(".abc2").find("#true").click(function(){
+$(".abc2").find("#true").css("background-color","green");
+});
+});
+$(document).ready(function(){
+$(".abc2").find("#false").click(function(){
+$(".abc2").find("#false").css("background-color","red");
+});
+});
+$(document).ready(function(){
+$(".abc2").find("#false1").click(function(){
+$(".abc2").find("#false1").css("background-color","red");
+});
+});
+$(document).ready(function(){
+$(".abc2").find("#false2").click(function(){
+$(".abc2").find("#false2").css("background-color","red");
+});
+});
+
+$(document).ready(function(){
+$("#d1").hide();
+$(".abc").find("#d11").click(function(){
+$("#d1").toggle();
+});
+});
+$(document).ready(function(){
+$("#a1").hide();
+$(".abc").find("#a11").click(function(){
+$("#a1").toggle();
+});
+});
+
+
+$(document).ready(function(){
+$("#d2").hide();
+$(".abcd").find("#d12").click(function(){
+$("#d2").toggle();
+});
+});
+$(document).ready(function(){
+$("#a2").hide();
+$(".abcd").find("#a12").click(function(){
+$("#a2").toggle();
+});
+});
+
+$(document).ready(function(){
+$("#d3").hide();
+$(".abce").find("#d13").click(function(){
+$("#d3").toggle();
+});
+});
+$(document).ready(function(){
+$("#a3").hide();
+$(".abce").find("#a13").click(function(){
+$("#a3").toggle();
+});
+});
+
+
+$(document).ready(function(){
+$("#d4").hide();
+$(".abc1").find("#d14").click(function(){
+$("#d4").toggle();
+});
+});
+$(document).ready(function(){
+$("#a4").hide();
+$(".abc1").find("#a14").click(function(){
+$("#a4").toggle();
+});
+});
+
+
+$(document).ready(function(){
+$("#d5").hide();
+$(".abc2").find("#d15").click(function(){
+$("#d5").toggle();
+});
+});
+$(document).ready(function(){
+$("#a5").hide();
+$(".abc2").find("#a15").click(function(){
+$("#a5").toggle();
+});
+});
+</script>
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-left">
+<div  style="width:100% " class="abc2">
+				
+				<a href="page2.html"><button  style="background-color:purple ; width:20%  ; float:left">PREVIOUS</button>
+			
+			<a href="page4.html"><button style="background-color:purple ; width:20%  ; float:right">FINISH</button>
+			</div><br><br>
+<p>&copy; Untitled. All rights reserved. | Design by<u> Abhishek Anand</u></p>
+ <h2>Contact Us</h2>
+<p>193246@nttdata.com</p>
+</footer>
+
+</body>
+</html>
